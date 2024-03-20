@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vw;
+    display: grid;
+    position: relative;
+    grid-template-rows: 1fr 20fr 3fr;
+    background-color: #2C2B47;
+    grid-template-columns: 1fr;
+}
+
+nav{
+    display: flex;
+    position: relative;
+    height: 5em;
+}
+.nav_content{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 10%;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    align-items: center;
+    gap: 50%;
+    background-color: #2C2B47;
+}
+main{
+    display: grid;
+    grid-template-rows: 1f 1fr 1fr 2fr 1fr;
+}
+#nav_title{
+    font-size: 1.7em;
+    flex-shrink: 2;
+    color: #FF702A;
+}
+footer{
+    background-color: azure;
+    height: 30vw;
+}
+.item a{
+    color: #FFFFFF;
+    text-decoration: none;
+    flex-basis: content;
+    padding: 5px;
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    height: 100%;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+ul li:hover{
+    border: 3px solid #095C43;
+}
+header{
+    box-sizing: border-box;
+    background-color: #2C2B47;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2em;
+    width: 100%;
+    height: max-content;
+    justify-content: center;
+    gap: 7em;
+    align-items: center;
+    height: 40em;
+    border-bottom: solid 2px #FF702A;
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 20em;
+        h1{
+            font-weight: normal;
+            font-size: 4rem;
+            color: #FF702A;
+            align-self: flex-end;
+        }
+        p{
+            color: #FFFFFF;
+        }
+
+    }
+
+    .image{
+        width: 25em;
+        height: 25em;
+        align-self: flex-start;
+    }
+    
+    #home{
+        width: 25em;
+        height: 25em;
+    }
+}
+.button{
+    width: max-content;
+    background-color: #FF702A;
+    padding: 10px 25px;
+    text-align: center;
+    margin-top: 1.5em;
+    
+    a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+}
+.button:hover{
+    transform: scale(1.1);
+}
+.sect1{
+    box-sizing: border-box;
+    flex-direction: row-reverse;
+    background-color: #2C2B47;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2em;
+    width: 100%;
+    height: max-content;
+    justify-content: center;
+    gap: 7em;
+    align-items: center;
+    height: 40em;
+    border-bottom: solid 2px #FF702A;
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow-wrap: break-word;
+        width: 30em;
+        height: 20em;
+        h1{
+            font-weight: normal;
+            font-size: 2.5rem;
+            color: #FF702A;
+            align-self: flex-end;
+            
+        }
+        p{
+            color: #FFFFFF;
+        }
+        .top-title{
+            color: #FF702A;
+        }
+    }
+    .image{
+        width: 25em;
+        height: 25em;
+        align-self: center;
+    }
+    #home{
+        width: 25em;
+        height: 25em;
+    }
+}
+.sect2{
+    display: flex;
+    box-sizing: border-box;
+    background-color: #2C2B47;
+    padding-bottom: 1em;
+    width: 100%;
+    height: max-content;
+    justify-content: center;
+    gap: 7em;
+    align-items: center;
+    height: 50em;
+    border-bottom: solid 2px #FF702A;
+
+    .content{
+        width: 90%;
+        height: 80%;
+        background-color: #FF702A;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .info {
+            width: 100%;
+            height: 20%;
+            background: red;
+        }
+        .img-container{
+            display: flex;
+            flex-direction: row;
+            
+            width: 100%;
+            height: 80%;
+            .img-cont1 {
+                width: 5em;
+                height: 5em;
+                background: blue;
+            }
+            .img-cont2 {
+                width: 5em;
+                height: 5em;
+                background: black;
+            }
+            .img-cont3 {
+                width: 5em;
+                height: 5em;
+                background: #095C43;
+            } 
+        }
+    }
+}
